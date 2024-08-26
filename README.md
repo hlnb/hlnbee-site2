@@ -1,0 +1,35 @@
+# 11ty Simons starter pack
+ Blank 11ty starter
+
+## Setup
+This is a template so you can create new repo on github by clicking the green button 'Use this template'.
+Open the project folder in your code app (Visual Studio Code for me where I can press Ctrl` to open terminal for the next bit).
+
+## Installation
+**Run:** 
+
+* npm init -y
+* npm install @11ty/eleventy@latest
+* npm install clean-css
+
+**in package.json change:**
+
+<pre><code>"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },</code></pre>
+
+**to:**
+
+<pre><code>"scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },</code></pre>
+
+**Run NPM script:** 
+
+* npm start eleventy --serve
+
+Start building out your new project!
+* Create files in /src.
+* Output files are in /public.
+* CSS is in the _includes folder as site.css and the clean-css package minifies this and adds it as inline css in the head of the html files for sheer page load speed.
